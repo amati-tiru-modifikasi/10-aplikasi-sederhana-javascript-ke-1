@@ -36,3 +36,6 @@ const initialClock = (id, endTime) => {
     updateClock();
     let timeInterval = setInterval(updateClock, 1000);
 }
+
+let deadLine = new Date(Date.parse(new Date()) + 14 * 24 * 60 * 60 * 1000);
+initialClock('clockdiv', deadLine);
